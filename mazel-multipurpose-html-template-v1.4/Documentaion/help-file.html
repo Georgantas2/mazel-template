@@ -1,0 +1,1073 @@
+<!doctype html>
+
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+
+    <title>Mazel - Responsive Multi-Purpose Html Template</title>
+
+    <meta name="description" content=" Responsive Multi-Purpose Html Template">
+
+    <!--Css-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,600,700' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="assets/css/doc-style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+    <link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="assets/img/logo-black.png" alt="mazel" />
+        </div>
+        <ul id="navigation">
+            <li><a href="#start">Start</a></li>
+            <li><a href="#structure">Html Structure</a></li>
+            <li><a href="#css">Css</a></li>
+            <li><a href="#changeLogo">Change Logo</a></li>
+            <li><a href="#changeImg">Change Image</a></li>
+            <li><a href="#changeBg">Change Background</a></li>
+            <li><a href="#parallax">Parallax</a></li>
+            <li><a href="#changeCont">Change content</a></li>
+            <li><a href="#icon">Icon</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contactForm">Contact Form</a></li>
+            <li><a href="#map">Google Map</a></li>
+            <li><a href="#creditAnSourc">Credits and Sources</a></li>
+        </ul>
+    </header>
+    <div id="page-wrapper">
+        <!-- Section -->
+        <section id="start">
+            <h2>Mazel &mdash; Responsive Multi-Purpose Html Template</h2>
+            <hr />
+            <p>
+                <span class="bold">Version:</span> 1.4<br>
+                <span class="bold">By:</span> nileforest<br>
+                <span class="bold">eMail:</span> <a href="mailto:support@nileforest.com">support@nileforest.com</a>
+            </p>
+            <p class="max-width">
+                Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to write us an email or contact us via our wrapbootstrap user page.
+            </p>
+            <a href="mailto:support@nileforest.com" class="button">Support via eMail</a>
+            <a href="https://wrapbootstrap.com/user/niletheme" class="button">Go to Wrapbootstrap</a>
+        </section>
+
+        <!-- Section -->
+        <section id="structure">
+            <h2>HTML Structure</h2>
+            <hr />
+            <h3>Basic Structure</h3>
+            <p>The Basic Structure contains:</p>
+            <pre class="prettyprint">
+    &lt;!DOCTYPE html>
+    &lt;html>
+    
+    &lt;head>
+        &lt;meta charset="utf-8" />
+        &lt;title>Mazel - Multiprapose Html template&lt;/title>
+        &lt;meta name="description" content="" />
+        &lt;meta name="keywords" content="" />
+        &lt;meta name="author" content="nileforest">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        &lt;!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+        &lt;!-- Favicone Icon -->
+        &lt;link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        &lt;link rel="icon" type="image/png" href="img/favicon.png">
+        &lt;link rel="apple-touch-icon" href="img/favicon.png">
+    
+        &lt;!-- CSS -->
+        &lt;link href="css/style.css" rel="stylesheet" type="text/css" />
+        &lt;link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+        &lt;link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+        &lt;link href="css/ionicons.css" rel="stylesheet" type="text/css" />
+        &lt;link href="css/plugin/sidebar-menu.css" rel="stylesheet" type="text/css" />
+        &lt;link href="css/plugin/animate.css" rel="stylesheet" type="text/css" />
+        &lt;link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+        
+        { here links to required css & js files }
+
+    &lt;/head>
+
+    &lt;body>
+        &lt;!-- Preloader -->
+        &lt;section id="preloader">
+                { Content }
+        &lt;/section>
+        &lt;!-- End Preloader -->
+
+        &lt;!-- Search Overlay menu -->
+        &lt;div class="search-overlay-menu"">
+                { Content }
+        &lt;/div>
+        &lt;!-- End Search Overlay menu -->
+
+        &lt;!-- Sidemenu -->
+        &lt;section id="pushmenu-right" class="pushmenu pushmenu-right side-menu">
+                { Content }
+        &lt;/section>
+        &lt;!-- End Sidemenu -->
+
+        
+
+        &lt;!-- Site Wraper -->
+        &lt;div class="wrapper">
+                &lt;!-- HEADER ------------------------------------------------------------------------------>
+                &lt;header id="header1" class="header">
+                &lt;div class="container header-inner">
+
+                    &lt;!-- Logo -->
+                    &lt;div class="logo">
+                        &lt;a href="index.html">
+                            &lt;img class="logo-light" src="img/logo-white.png" alt="Mazel" />
+                            &lt;img class="logo-dark" src="img/logo-black.png" alt="Mazel" />
+                        &lt;/a>
+                    &lt;/div>
+                    &lt;!-- End Logo -->
+
+                    &lt;!-- Rightside Menu (Search, Cart, Bart icon) -->
+                    &lt;div class="side-menu-btn">
+                        &lt;ul>
+                            &lt;!-- Search Icon -->
+                            &lt;li class="">
+                                &lt;a class="search-overlay-menu-btn header-icon">&lt;i class="fa fa-search">&lt;/i>&lt;/a>
+                            &lt;/li>
+                            &lt;!-- End Search Icon -->
+
+                            &lt;!-- Cart Icon -->
+                            &lt;li class="cart">
+                                &lt;a class="header-icon" href="shop-checkout.html">
+                                    &lt;i class="fa fa-shopping-cart">&lt;/i>
+                                    &lt;div class="cart-notification-wrap">&lt;span class="cart-notification">2&lt;/span>&lt;/div>
+                                &lt;/a>
+                                &lt;!-- Cart Dropdown -->
+                                &lt;div class="cart-dropdown">
+                                    &lt;ul class="cart-list">
+                                        &lt;li class="light-color">
+                                            &lt;a class="close-cart-list">&lt;i class="fa fa-times-circle">&lt;/i>&lt;/a>
+                                            &lt;div class="media">
+                                                &lt;a class="pull-left">
+                                                    &lt;img src="img/product/02.jpg" alt="fashion" />&lt;/a>
+                                                &lt;div class="media-body">
+                                                    &lt;h6>&lt;a>Fashion Model New /01&lt;/a>&lt;/h6>
+                                                    &lt;p>$399.00&lt;/p>
+                                                &lt;/div>
+                                            &lt;/div>
+                                        &lt;/li>
+                                        &lt;li class="light-color">
+                                            &lt;a class="close-cart-list">&lt;i class="fa fa-times-circle">&lt;/i>&lt;/a>
+                                            &lt;div class="media">
+                                                &lt;a class="pull-left">
+                                                    &lt;img src="img/product/06.jpg" alt="fashion" />&lt;/a>
+                                                &lt;div class="media-body">
+                                                    &lt;h6>&lt;a>Fashion Model New /02&lt;/a>&lt;/h6>
+                                                    &lt;p>$399.00&lt;/p>
+                                                &lt;/div>
+                                            &lt;/div>
+                                        &lt;/li>
+                                    &lt;/ul>
+                                    &lt;p class="cart-sub-totle">&lt;span class="pull-left">Cart Subtotal&lt;/span>&lt;span class="pull-right totle">&lt;strong>$798.00&lt;/strong>&lt;/span>&lt;/p>
+                                    &lt;div class="clearfix">&lt;/div>
+                                    &lt;div class="cart-checkout-btn">
+                                        &lt;a href="shop-checkout.html" class="btn btn-md btn-color-b form-full checkout">Checkout&lt;/a>
+                                    &lt;/div>
+                                &lt;/div>
+                                &lt;!-- End Cart Dropdown -->
+                            &lt;/li>
+                            &lt;!-- End Cart Icon -->
+
+                            &lt;!--Sidebar Menu Icon-->
+                            &lt;li class="">
+                                &lt;a id="menu-sidebar-list-icon" class="nav-bar-icon">&lt;span>&lt;/span>&lt;/a>
+                            &lt;/li>
+                            &lt;!-- End Sidebar Menu Icon-->
+                        &lt;/ul>
+                    &lt;/div>
+                    &lt;!-- End Rightside Menu -->
+
+                    &lt;!-- Mobile Navbar Icon -->
+                    &lt;div class="nav-mobile nav-bar-icon">
+                        &lt;span>&lt;/span>
+                    &lt;/div>
+                    &lt;!-- End Mobile Navbar Icon -->
+
+                    &lt;!-- Navbar Navigation -->
+                    &lt;div class="nav-menu">
+                        &lt;ul class="nav-menu-inner">
+                            &lt;li>
+                                &lt;a class="menu-has-sub" href="home.html">Home &lt;i class="fa fa-angle-down">&lt;/i>&lt;/a>
+                                &lt;!-- Dropdown -->
+                                &lt;ul class="sub-dropdown dropdown">
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub" href='#'>Multi Page &lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="home.html">Default&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="home-video.html">Intro Video&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="home-youtube.html">Intro Youtube&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="home-static.html">Intro Static&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="home-agency-grid.html">Agency Grid&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="home-agency-masonry.html">Agency Masonry&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="home-fullwidth-slider.html">Fullwidth Slider&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="home-text-rotator1.html">Text Rotator1&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="home-text-rotator2.html">Text Rotator2&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="home-personal.html">Personal&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="home-fullscreen.html">Full Screen&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="home-canvas-pattern.html">Canvas Pattern&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="home-section-scroll.html">Page Section Scroll&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="shop-2col.html">Shop&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="home-revolution-slider1.html">Revolution Slider 1&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="home-revolution-slider2.html">Revolution Slider 2&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="home-coming-soon.html">Comming Soon&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub" href="#">One Page &lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="onepage.html">Default&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="onepage-personal.html">Personal&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="onepage-video.html">Video&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="onepage-youtube.html">Youtube&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="onepage-static.html">Static&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="onepage-fullwidth-slider.html">Fullwidth&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="onepage-text-rotator1.html">Text Rotator1&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="onepage-text-rotator2.html">Text Rotator2&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="onepage-canvas-pattern.html">Canvas Pattern&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="onepage-revolution-slider1.html">Revolution Slider 1&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="onepage-revolution-slider2.html">Revolution Slider 2&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                &lt;/ul>
+                                &lt;!-- End Dropdown -->
+                            &lt;/li>
+                            &lt;li>
+                                &lt;a class="menu-has-sub">Pages &lt;i class="fa fa-angle-down">&lt;/i>&lt;/a>
+                                &lt;!-- Dropdown -->
+                                &lt;ul class="sub-dropdown dropdown">
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">About Us &lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="about-1.html">About 1&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="about-2.html">About 2&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="about-3.html">About 3&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">Service &lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="service-1.html">Service 1&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="service-2.html">Service 2&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="service-3.html">Service 3&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">Contact Us &lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="contact-1.html">Contact 1&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="contact-2.html">Contact 2&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="contact-3.html">Contact 3&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">Faq&lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="faq-1.html">Faq 1&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="faq-2.html">Faq 2&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">Login / Register&lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="login.html">Login&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="register.html">Register&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="login-register.html">Login / Register&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>&lt;a href="pricing.html">Pricing&lt;/a>&lt;/li>
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">404 Error&lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="404-error-1.html">404 page1&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="404-error-2.html">404 page2&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>&lt;a href="sidebar-left.html">Sidebar Left&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a href="sidebar-right.html">Sidebar Right&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a href="blank-page.html">Blank Page&lt;/a>&lt;/li>
+                                &lt;/ul>
+                                &lt;!-- End Dropdown -->
+                            &lt;/li>
+                            &lt;li>
+                                &lt;a class="menu-has-sub">Portfolio &lt;i class="fa fa-angle-down">&lt;/i>&lt;/a>
+                                &lt;!-- Dropdown -->
+                                &lt;ul class="sub-dropdown dropdown">
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">Grid &lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="portfolio-grid-2col.html">2 Columns&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-grid-2col-no_spacing.html">2 Columns no-Spacing&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-grid-3col.html">3 Columns&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-grid-3col-no_spacing.html">3 Columns no-Spacing&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-grid-4col.html">4 Columns&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-grid-4col-no_spacing.html">4 Columns no-Spacing&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">Masonry &lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="portfolio-masonry-2col.html">2 Columns&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-masonry-2col-no_spacing.html">2 Columns no-Spacing&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-masonry-3col.html">3 Columns&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-masonry-3col-no_spacing.html">3 Columns no-Spacing&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-masonry-4col.html">4 Columns&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-masonry-4col-no_spacing.html">4 Columns no-Spacing&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">Wide &lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="portfolio-wide-grid.html">Grid&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-wide-grid-no_spacing.html">Grid no-Spacing&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-wide-masonry.html">Masonry&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-wide-masonry-no_spacing.html">Masonry no-Spacing&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">Classical &lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="portfolio-classical-spacing.html">Spacing&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-classical-no_spacing.html">no-Spacing&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">Lightbox &lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="portfolio-lightbox-grid.html">Grid&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-lightbox-masonry.html">Masonry&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">Single &lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="portfolio-single1.html">Single 1&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-single2.html">Single 2&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-single3.html">Single 3&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-single4.html">Single 4&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-single5-slider.html">Single 5 - Slider&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-single6-video.html">Single 6 - Video&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-single7-youtube.html">Single 7 - youtube&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="portfolio-single8-vimeo.html">Single 8 - vimeo&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                &lt;/ul>
+                                &lt;!-- End Dropdown -->
+                            &lt;/li>
+                            &lt;li>
+                                &lt;a class="menu-has-sub">Blog &lt;i class="fa fa-angle-down">&lt;/i>&lt;/a>
+                                &lt;!-- Dropdown -->
+                                &lt;ul class="sub-dropdown dropdown">
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">Grid &lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="blog-grid-2col.html">2 Columns&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="blog-grid-2col-sidebar.html">2 Columns - sidebar&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="blog-grid-3col.html">3 Columns&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">Masonry &lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="blog-masonry-2col.html">2 Columns&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="blog-masonry-2col-sidebar.html">2 Columns - sidebar&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="blog-masonry-3col.html">3 Columns&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">One Columns &lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="blog-1col.html">no-sidebar&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="blog-1col-sidebar.html">with sidebar&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li>
+                                        &lt;a class="menu-has-sub">Blog Detail &lt;i class="fa fa-angle-right">&lt;/i>&lt;/a>
+                                        &lt;ul class="sub-dropdown">
+                                            &lt;li>&lt;a href="blog-single-image-post.html">Image Post&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="blog-single-slider-post.html">Slider Post&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="blog-single-video-post.html">Video Post&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="blog-single-audio-post.html">Audio Post&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="blog-single-youtube-post.html">Youtube Post&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="blog-single-vimeo-post.html">Vimeo Post&lt;/a>&lt;/li>
+                                            &lt;li>&lt;a href="blog-single-quote-post.html">Quote Post&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                &lt;/ul>
+                                &lt;!-- End Dropdown -->
+                            &lt;/li>
+                            &lt;li>
+                                &lt;a class="menu-has-sub">Elements &lt;i class="fa fa-angle-down">&lt;/i>&lt;/a>
+                                &lt;!-- Dropdown -->
+                                &lt;ul class="sub-dropdown dropdown">
+                                    &lt;li>&lt;a href="element-components.html">Components&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a href="element-tabs-and-accordian.html">Tabs & Accordian&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a href="element-slider.html">Slider&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a href="element-team.html">Team&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a href="element-pricing.html">Pricing&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a href="element-video-and-audio.html">Video / Audio&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a href="element-typography.html">Typography&lt;/a>&lt;/li>
+                                &lt;/ul>
+                                &lt;!-- End Dropdown -->
+                            &lt;/li>
+                            &lt;li>
+                                &lt;a class="menu-has-sub">Shop &lt;i class="fa fa-angle-down">&lt;/i>&lt;/a>
+                                &lt;!-- Dropdown -->
+                                &lt;ul class="sub-dropdown dropdown">
+                                    &lt;li>&lt;a href="shop-2col.html">2 Columns&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a href="shop-3col.html">3 Columns&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a href="shop-4col.html">4 Columns&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a href="shop-left-sidebar.html">Left Sidebar&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a href="shop-right-sidebar.html">Right Sidebar&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a href="shop-detail.html">Shop Detail&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a href="shop-checkout.html">Checkout&lt;/a>&lt;/li>
+                                &lt;/ul>
+                                &lt;!-- End Dropdown -->
+                            &lt;/li>
+                        &lt;/ul>
+                    &lt;/div>
+                    &lt;!-- End Navbar Navigation -->
+
+                &lt;/div>
+            &lt;/header>
+            &lt;!-- End HEADER ------------------------------------------------------------------------------>
+
+            &lt;!-- CONTENT --------------------------------------------------------------------------------->
+
+            &lt;!-- Intro Section -->
+            &lt;section id="intro">
+                { Content }              
+            &lt;/section>
+            &lt;!-- End Intro Section -->
+
+            &lt;!-- Content Section -->
+            &lt;section class="ptb ptb-sm-80">
+                { site content }
+            &lt;/section>
+            &lt;!-- End Content Section -->
+
+            &lt;!-- END CONTENT --------------------------------------------------------------------------------->
+
+            &lt;!-- FOOTER -------------------------------------------------------------------------------------->
+            &lt;footer class="footer">
+                { Content }              
+            &lt;/footer>
+            &lt;!-- END FOOTER -------------------------------------------------------------------------------------->
+        &lt;/div>
+        &lt;!-- End Site Wraper -->
+
+
+
+
+        &lt;!-- JS -->
+        &lt;script src="js/jquery-1.11.2.min.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/plugin/jquery.easing.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/jquery-ui.min.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/bootstrap.min.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/plugin/jquery.flexslider.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/plugin/jquery.fitvids.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/plugin/jquery.viewportchecker.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/plugin/jquery.stellar.min.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/plugin/wow.min.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/plugin/jquery.colorbox-min.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/plugin/owl.carousel.min.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/plugin/isotope.pkgd.min.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/plugin/masonry.pkgd.min.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/plugin/jquery.fs.tipper.min.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/plugin/mediaelement-and-player.min.js">&lt;/script>
+        &lt;script src="js/plugin/sidebar-menu.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/theme.js" type="text/javascript">&lt;/script>
+        &lt;script src="js/navigation.js" type="text/javascript">&lt;/script>
+
+        &lt;script type="text/javascript">
+            // { Script }
+        &lt;/script>
+    &lt;/body>
+
+    &lt;/html>
+</pre>
+        </section>
+
+        <!-- Section -->
+        <section id="css">
+            <h2>Stylesheets</h2>
+            <hr />
+            <h3>Files</h3>
+            <p class="max-width">All CSS are located in the "css" folder of the template. Each CSS File is well commented and easy to use and customize to your own needs. Here's the list of the CSS files:</p>
+            <p class="max-width">
+                <span class="bold">01. style.css</span> - Specific theme settings<br>
+                <span class="bold">02. navigation.css</span> - Navigation Menu settings<br>
+                <span class="bold">03. bootstrap.css</span> - Responsive 12 Column Grid settings<br>
+                <span class="bold">04. jquery-ui.css</span> - jQuery UI Css (Tab, Accordian, Price Slider, etc)<br>
+                <span class="bold">05. font-awesome.css</span> - Theme Used Font Icon<br>
+                <span class="bold">06. ionicons.css</span> - Theme Used Font Icon<br>
+                <span class="bold">07. animate.css</span> - Object Animation Element<br>
+                <span class="bold">08. colorbox.css</span> - Lightbox Popup<br>
+                <span class="bold">09. flexslider.css</span> - Flex Slider settings<br>
+                <span class="bold">10. owl.carousel.css</span> - Owl Slider settings<br>
+                <span class="bold">11. sidebar-menu.css</span> - Push Menu (Left, Right, Sidemenu) Setting<br>
+                <span class="bold">12. jquery.fs.tipper.css</span> - Tooltip Setting<br>
+                <span class="bold">13. jquery.fullPage.css</span> - Fullpage Section Scroll Setting<br>
+                <span class="bold">14. mediaelementplayer.css</span> - Video & Audio player Setting<br>
+                <span class="bold">15. YTPlayer.css</span> - Youtube Player Setting<br>
+                <span class="bold">16. smoothproducts.css</span> - Product Zoom Setting (<span class="bold">Example:</span> Shop Detail Page)
+                <br>
+            </p>
+            <h3 class="margin-top">Style.css includes:</h3>
+            <pre class="prettyprint lang-css">
+/* 
+* BASIC STYLE
+  - General Style    
+  - Headings Style    
+  - Button Style    
+  - Form Style    
+  - Spacer Style
+      
+* HEADER 
+  - Header Style
+  - Logo Style
+  - Navigation Menu Style
+  - Right Side Menu Button (Search, Cart, Bar, etc)
+
+* INTRO
+  - intro
+
+* FOOTER
+
+* ELEMENTS
+  - Team Box
+  - Skills Bar
+  - Accordion Tab
+  - Counter
+  - Service Box
+  - Pricing
+  - Testimonials
+  - Client Logo
+  - Icon
+  - Table
+  
+* GLOBAL STYLES
+  - Push Menu Style ( Right Sidebar Menu )
+  - Search Overlay Menu
+  - Contents (Body, Container, Section, etc)
+  - Contants (Portfolio, Blog, Shop etc)
+  - Parallax
+  - Slider
+  - Preloader
+  - Additional
+*/
+            </pre>
+            <br />
+            <p>Edit Css Example</p>
+            <pre class="prettyprint lang-css">
+body {
+    line-height: 24px;
+    color: #323232;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.footer {
+    background-color: #f7f7f7;
+    color: #323232;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+            </pre>
+        </section>
+
+        <!-- Section -->
+        <section id="changeLogo">
+            <h2>Change Logo</h2>
+            <hr />
+            <p class="max-width">At theme directory "img" folder, you will see logo images theme. Basically you need three logo. To change logo, go the HTML file for example home.html and find "logo-black.png", "logo-white.png" and "logo-color.png". You should see code as below:</p>
+            <pre class="prettyprint">
+    &lt;!-- logo -->
+    &lt;div class="logo">
+        &lt;a href="index.html">
+            &lt;img class="logo-light" src="img/logo-white.png" alt="Mazel" />
+            &lt;img class="logo-dark" src="img/logo-black.png" alt="Mazel" />
+        &lt;/a>
+    &lt;/div>
+    &lt;!--End logo-->
+            </pre>
+        </section>
+
+        <!-- Section -->
+        <section id="changeImg">
+            <h2>Change Images</h2>
+            <hr />
+            <p class="max-width">Find in The HTML page:</p>
+            <pre class="prettyprint">
+    &lt;!-- Replace Your Image Path To Change example "img/yourImagesName.jpg" -->
+
+    &lt;!-- JPG File -->
+    &lt;img src="img/yourImagesName.jpg" />
+
+    &lt;!-- PNG File -->
+    &lt;img src="img/yourImagesName.png" />
+
+    &lt;!-- GIF File -->
+    &lt;img src="img/yourImagesName.gif" />
+            </pre>
+        </section>
+
+        <!-- Section -->
+        <section id="changeBg">
+            <h2>Change Background Image</h2>
+            <hr />
+            <p class="max-width">Find this <span class="bold">.bg-img1</span> Class Replace your Image Path in <span class="bold">styles.css</span></p>
+            <pre class="prettyprint">
+    .bg-img1 {
+        background-image: url("../img/full/01.jpg"); /* Change Your Images Path */
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+            </pre>
+            <p class="max-width">Add attribute to your images In <span class="bold">HTML</span> Page</p>
+            <pre class="prettyprint">
+    &lt;div style="background: url('img/full/01.jpg') no-repeat center center;">&lt;/div>
+            </pre>
+        </section>
+
+        <!-- Section -->
+        <section id="parallax">
+            <h2>Parallax</h2>
+            <hr />
+            <h3>Intro Section Parallax</h3>
+            <p class="max-width">To give a container a parallax add the class="<span class="bold">parallax</span>"</p>
+            <p>
+                Section Parallax class="<span class="bold">parallax parallax-section1</span>", or
+                <br />
+                Backgraund Image Parallax class="<span class="bold">parallax parallax-background1</span>".
+            </p>
+            <pre class="prettyprint">
+    &lt;!-- Intro Section Parallax -->
+    &lt;div class="parallax parallax-section1">
+        Your Content
+    &lt;/div>
+
+    &lt;!-- Intro Background Image Parallax -->
+    &lt;div class="parallax parallax-background1">
+        Your Content
+    &lt;/div>
+            </pre>
+            <h3 class="margin-top">Content Section Parallax</h3>
+            <pre class="prettyprint">
+    &lt;!-- Content Section Parallax -->
+    &lt;section style="background-image: url('img/full/01.jpg');" data-stellar-background-ratio="0.5">
+        Your Content
+    &lt;/section>
+            </pre>
+        </section>
+
+        <!-- Section -->
+        <section id="changeCont">
+            <h2>Change Your Content</h2>
+            <hr />
+            <p class="max-width">Open the <span class="bold">HTML</span> file Change Your content</p>
+            <pre class="prettyprint">
+    &lt;!-- Change Hadding Title -->
+    &lt;h1> Change Your Title &lt;/h1>
+    &lt;h2> Change Your Title &lt;/h2>
+    &lt;h3> Change Your Title &lt;/h3>
+    &lt;h4> Change Your Title &lt;/h4>
+    &lt;h5> Change Your Title &lt;/h5>
+    &lt;h6> Change Your Title &lt;/h6>
+
+    &lt;!-- Change Paragraph Content -->
+    &lt;p> Change Your Content &lt;/p>
+
+    &lt;!-- Change Anchor Link Tag Content -->
+    &lt;a href="example-link.html"> example link content "See More" &lt;/a>
+            </pre>
+        </section>
+
+        <!-- Section -->
+        <section id="icon">
+            <h2>Icon</h2>
+            <hr />
+            <p class="max-width">In this theme used font icons Set from <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">fortAwesome</a> and <a href="http://ionicons.com/" target="_blank">ionicons</a></p>
+            <p><span class="bold">Example</span></p>
+            <pre class="prettyprint">
+    &lt;!-- Change font Awesome Icon -->
+    &lt;i class="fa fa-motorcycle">&lt;/i>
+
+    &lt;!-- Change font Ionicons Icon -->
+    &lt;i class="ion ion-ios-gear-outline">&lt;/i>
+            </pre>
+        </section>
+
+        <!-- Section -->
+        <section id="video">
+            <h2>Video</h2>
+            <hr />
+            <p class="max-width">I used <a href="https://github.com/davatron5000/FitVids.js">FitVids.js</a> for responsive video. Please check the plugin github page to learn everything about the plugin.</p>
+            <p>Add or Edit Video, I used Plugin Player <a href="http://mediaelementjs.com/">mediaelementjs</a></p>
+            <p><span class="bold">Example</span></p>
+            <pre class="prettyprint">
+    &lt;video class="bg-video" style="width: 100%;" width="" height="" id="player2" muted="" preload="auto" poster="media/youPosterImageName.jpg" autoplay="" loop="">
+        &lt;!-- MP4 source must come first for iOS -->
+        &lt;source type="video/mp4" src="media/changeVideoFileName.mp4" />
+        &lt;!-- WebM for Firefox 4 and Opera -->
+        &lt;source type="video/webm" src="media/changeVideoFileName.webm" />
+        &lt;!-- OGG for Firefox 3 -->
+        &lt;source type="video/ogg" src="media/changeVideoFileName.ogv" />
+    &lt;/video>
+            </pre>
+        </section>
+
+        <!-- Section -->
+        <section id="contactForm">
+            <h2>Contact Form</h2>
+            <hr />
+            <p class="max-width">Contact form will use php to send emails. So just open <span class="bold">send-mail.php</span> file. Change the current email <span class="bold">'user@yourdomain.com'</span> to your email address. Your form is ready.</p>
+            <pre class="prettyprint">
+    $to = 'user@yourdomain.com'; // Change your email address
+            </pre>
+        </section>
+
+        <!-- Section -->
+        <section id="map">
+            <h2>Google Map</h2>
+            <hr />
+            <p class="max-width">You only need this HTML. Do all settings in <span class="bold">"js/map.js"</span>.</p>
+
+
+            <h3>HTML</h3>
+            <pre class="prettyprint">
+    &lt;div id="map">&lt;/div>
+            </pre>
+            <h3>map.js</h3>
+            <pre class="prettyprint">
+    google.maps.event.addDomListener(window, 'load', init);
+
+    function init() {
+        // Basic options for a simple Google Map
+        var mapOptions = {
+            // How zoomed in you want the map to start at (always required)
+            zoom: 15,
+
+            // The latitude and longitude to center the map (always required)
+            center: new google.maps.LatLng(21.170240, 72.831061), // Surat, Gujarat, India
+
+            // How you would like to style the map. 
+            // This is where you would paste any style found on Snazzy Maps.
+            styles: [
+            {
+                "featureType": "water",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#d3d3d3"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit",
+                "stylers": [
+                    {
+                        "color": "#808080"
+                    },
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "color": "#b3b3b3"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "color": "#ffffff"
+                    },
+                    {
+                        "weight": 1.8
+                    }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "color": "#d7d7d7"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "color": "#ebebeb"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#a7a7a7"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "color": "#efefef"
+                    }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#696969"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "color": "#737373"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "labels",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "color": "#d6d6d6"
+                    }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {},
+            {
+                "featureType": "poi",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#dadada"
+                    }
+                ]
+            }
+            ]
+        };
+
+        // Get the HTML DOM element that will contain your map 
+        // We are using a div with id="map" seen below in the &lt;body>
+        var mapElement = document.getElementById('map');
+
+        // Create the Google Map using our element and options defined above
+        var map = new google.maps.Map(mapElement, mapOptions);
+
+        // Let's also add a marker while we're at it
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(21.170240, 72.831061),
+            map: map,
+            title: 'Nileforest',
+            icon: 'img/map-marker.png'
+
+        });
+    };
+
+            </pre>
+            <p>how to create location latitude and longitude? <a target="_blank" href="http://www.latlong.net/convert-address-to-lat-long.html">Click Here</a></p>
+
+        </section>
+
+        <!-- Section -->
+        <section id="creditAnSourc">
+            <h2>Credits and Sources</h2>
+            <hr />
+            <h4>Javascript Plugins</h4>
+
+            <ul>
+                <li>Slider Revolution by Themepunch <a target="_blank" href="http://revolution.themepunch.com/jquery">http://revolution.themepunch.com/jquery</a></li>
+                <li>jQuery <a target="_blank" href="http://jquery.com/">http://jquery.com/</a></li>
+                <li>jQueryUi <a target="_blank" href="http://jqueryui.com/">http://jqueryui.com/</a></li>
+                <li>jquery Easing <a target="_blank" href="http://gsgd.co.uk/sandbox/jquery/easing/">http://gsgd.co.uk/sandbox/jquery/easing/</a></li>
+                <li>Isotope <a target="_blank" href="http://isotope.metafizzy.co/">http://isotope.metafizzy.co/</a></li>
+                <li>Masonry <a target="_blank" href="http://masonry.desandro.com/">http://masonry.desandro.com/</a></li>
+                <li>Greensock <a target="_blank" href="http://greensock.com/">http://greensock.com/</a></li>
+                <li>Light Box Popup <a target="_blank" href="http://www.jacklmoore.com/colorbox/">http://www.jacklmoore.com/colorbox/</a></li>
+                <li>DownCount <a target="_blank" href="https://github.com/sonnyt/downCount">https://github.com/sonnyt/downCount</a></li>
+                <li>Snazzy Maps <a target="_blank" href="https://snazzymaps.com/">https://snazzymaps.com/</a></li>
+                <li>Fitvids <a target="_blank" href="http://fitvidsjs.com/">http://fitvidsjs.com/</a></li>
+                <li>Flexslider <a target="_blank" href="http://flexslider.woothemes.com/">http://flexslider.woothemes.com/</a></li>
+                <li>owlCarousel <a target="_blank" href="http://owlgraphic.com/owlcarousel/">http://owlgraphic.com/owlcarousel/</a></li>
+                <li>Tooltip <a href="http://formstone.it/tipper/">http://formstone.it/tipper/</a></li>
+                <li>fullPage.js <a target="_blank" href="https://github.com/alvarotrigo/fullPage.js">https://github.com/alvarotrigo/fullPage.js</a></li>
+                <li>mediaelementjs Player Plugin <a target="_blank" href="http://mediaelementjs.com/">http://mediaelementjs.com/</a></li>
+                <li>YTPlayer <a target="_blank" href="https://github.com/pupunzi/jquery.mb.YTPlayer">https://github.com/pupunzi/jquery.mb.YTPlayer</a></li>
+                <li>Simple Text Rotator <a target="_blank" href="https://github.com/peachananr/simple-text-rotator">https://github.com/peachananr/simple-text-rotator</a></li>
+                <li>Single Page Nav <a target="_blank" href="https://github.com/ChrisWojcik/single-page-nav">https://github.com/ChrisWojcik/single-page-nav</a></li>
+                <li>Stellar Parallax Plugin <a target="_blank" href="http://markdalgleish.com/projects/stellar.js/">http://markdalgleish.com/projects/stellar.js/</a></li>
+                <li>Form Validation <a target="_blank" href="http://jqueryvalidation.org/">http://jqueryvalidation.org/</a></li>
+                <li>Viewportchecker <a target="_blank" href="https://github.com/dirkgroenen/jQuery-viewport-checker">https://github.com/dirkgroenen/jQuery-viewport-checker</a></li>
+                <li>pollyfill Animated Background <a target="_blank" href="http://tympanus.net/codrops/2014/09/23/animated-background-headers/">http://tympanus.net/codrops/2014/09/23/animated-background-headers/</a></li>
+                <li>smoothproducts Product Zoom <a target="_blank" href="http://kthornbloom.com/smoothproducts/">http://kthornbloom.com/smoothproducts/</a></li>
+                <li>wow Scroll Animations <a target="_blank" href="http://mynameismatthieu.com/WOW/">http://mynameismatthieu.com/WOW/</a></li>
+                <li>Magnific Popup<a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></li>
+                <li>Backstretch<a target="_blank" href="http://srobbin.com/jquery-plugins/backstretch/">http://srobbin.com/jquery-plugins/backstretch/</a></li>
+            </ul>
+            <br />
+            <h4>Css Plugins</h4>
+            <ul>
+                <li>Bootstrap v3.3.1<a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+                <li>Font Awesome<a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">http://fortawesome.github.io/Font-Awesome/icons/</a></li>
+                <li>Ionicons Font Icon<a target="_blank" href="http://ionicons.com/">http://ionicons.com/</a></li>
+                <li>Theme Google Font "Raleway"<a target="_blank" href="https://www.google.com/fonts/specimen/Raleway">https://www.google.com/fonts/specimen/Raleway</a></li>
+            </ul>
+            <br />
+
+            <h4>Images</h4>
+            <ul>
+                <li>samthiesphotography <a target="_blank" href="http://www.samthiesphotography.com.au/">http://www.samthiesphotography.com.au/</a></li>
+                <li>kibisi <a target="_blank" href="http://www.kibisi.com/">http://www.kibisi.com/</a></li>
+                <li>nothingtochance <a target="_blank" href="http://nothingtochance.co/">http://nothingtochance.co/</a></li>
+                <li>thestocks <a target="_blank" href="http://thestocks.im/">http://thestocks.im/</a></li>
+                <li>nicholas maggio <a target="_blank" href="http://www.nicholasmaggio.com">http://www.nicholasmaggio.com</a></li>
+                <li>zara <a target="_blank" href="http://www.zara.com">http://www.zara.com</a></li>
+                <li>Michael Schauer <a target="_blank" href="https://www.flickr.com/photos/regnumsaturni/">https://www.flickr.com/photos/regnumsaturni/</a></li>
+                <li>Asos <a target="_blank" href="http://asos.com/">http://asos.com/</a></li>
+                <li>Unsplash <a target="_blank" href="http://unsplash.com/">http://unsplash.com/</a></li>
+            </ul>
+            <br />
+            <h4>Video</h4>
+            <ul>
+                <li>P & Co <a target="_blank" href="https://vimeo.com/77851300">https://vimeo.com/77851300</a></li>
+            </ul>
+        </section>
+
+    </div>
+
+
+    <!--Js-->
+    <script src="assets/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="assets/js/google-code-prettify/prettify.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.easing.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.singlePageNav.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //  Onepage Nav Elements
+        $('#navigation').singlePageNav({
+            offset: 0,
+            filter: ':not(.nav-external)',
+            updateHash: true,
+            currentClass: 'active',
+            easing: 'swing',
+            speed: 750,
+            beforeStart: function () {
+                console.log('begin scrolling');
+            },
+            onComplete: function () {
+                console.log('done scrolling');
+
+            }
+        });
+
+
+
+    </script>
+
+</body>
+</html>
